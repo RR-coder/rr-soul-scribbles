@@ -1,0 +1,46 @@
+
+body {
+  font-family: 'Georgia', serif;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  color: #222;
+}
+
+header {
+  background-color: #c62828;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+.container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.chapter-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.chapter-list li {
+  margin: 1rem 0;
+  border: 1px solid #eee;
+  padding: 1rem;
+  border-radius: 8px;
+  background: #f9f9f9;
+}
+
+.chapter-list a {
+  text-decoration: none;
+  color: #c62828;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  margin: 2rem 0;
+  color: #888;
+}
