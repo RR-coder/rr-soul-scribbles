@@ -1,51 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Red Siren Diaries</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About - Red Siren Diaries</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap" rel="stylesheet">
   <style>
     body {
+      margin: 0;
       background-color: #0e0e0e;
       color: #f3f3f3;
       font-family: 'Roboto', sans-serif;
+      line-height: 1.7;
       padding: 2rem;
     }
-    h1 {
+    h1, h2 {
       font-family: 'Playfair Display', serif;
       color: #e53935;
+    }
+    h1 {
       text-align: center;
+      margin-bottom: 2rem;
     }
-    ul {
-      list-style: none;
-      padding: 0;
-      max-width: 600px;
+    section {
+      max-width: 800px;
       margin: auto;
-    }
-    li {
-      margin: 1rem 0;
-      background: #1c1c1c;
-      padding: 1rem;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+      padding-bottom: 2rem;
     }
     a {
-      text-decoration: none;
+      display: inline-block;
+      margin-top: 2rem;
       color: #e53935;
-      font-weight: bold;
-      font-size: 1.1rem;
+      text-decoration: none;
+      border: 1px solid #e53935;
+      padding: 0.6rem 1.2rem;
+      border-radius: 6px;
+      transition: background 0.3s;
+    }
+    a:hover {
+      background-color: #e53935;
+      color: #fff;
     }
   </style>
 </head>
 <body>
   <h1>Red Siren Diaries</h1>
-  <ul>
-    <li><a href="books/red-siren-diaries/chapter1.html">Chapter 1: The Suicide That Wasn’t</a></li>
-    <li><a href="books/red-siren-diaries/chapter2.html">Chapter 2: The Hauz Khas Heist</a></li>
-    <li><a href="books/red-siren-diaries/about.html">About the Author & Acknowledgment</a></li>
-  </ul>
-  <p style="text-align: center; margin-top: 2rem;">
-    <a href="../../index.html" style="color: #ccc;">← Back to Library</a>
-  </p>
+
+  <section>
+    <h2>Acknowledgment</h2>
+    <p>
+      I express deep gratitude to all the readers who believe in dark fiction and psychological storytelling. Special thanks to my closest friends and creative collaborators who constantly support me.
+    </p>
+  </section>
+
+  <section>
+    <h2>About the Book</h2>
+    <p>
+      "Red Siren Diaries" is not just a story — it's an unfolding of suspense, obsession, and haunting truths buried beneath appearances. This series walks you through one chilling case at a time, bringing characters alive through disturbing yet immersive storytelling.
+    </p>
+  </section>
+
+  <section>
+    <h2>About the Author</h2>
+    <p>
+      The author is a passionate storyteller with a keen eye for crime thrillers and emotionally intense fiction. Through RR Soul Scribbles, each story is a reflection of raw emotions, psychological layers, and mysteries waiting to be solved.
+    </p>
+  </section>
+
+  <div style="text-align: center;">
+    <a href="index.html">← Back to Book Home</a>
+  </div>
 </body>
 </html>
