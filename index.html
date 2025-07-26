@@ -8,29 +8,34 @@
   <style>
     body {
       margin: 0;
-      background-color: #0e0e0e;
-      color: #f3f3f3;
+      background-color: #2b1f16; /* Deep library wood tone */
+      color: #f0e6d6;
       font-family: 'Roboto', sans-serif;
       line-height: 1.6;
+      background-image: url('https://www.transparenttextures.com/patterns/wood-pattern.png'); /* optional texture */
+      background-size: cover;
     }
 
     header {
       text-align: center;
       padding: 4rem 2rem 2rem;
-      background-color: #1a1a1a;
+      background-color: rgba(43, 31, 22, 0.95); /* translucent dark wood */
+      border-bottom: 2px solid #a9744f;
     }
 
     header h1 {
       font-family: 'Playfair Display', serif;
       font-size: 2.8rem;
       margin: 0;
-      color: #e53935;
+      color: #d4af7f; /* Gold-like title */
+      text-shadow: 1px 1px 3px #000;
     }
 
     header p {
       font-size: 1.1rem;
       margin-top: 0.8rem;
-      color: #ccc;
+      color: #e0d2c0;
+      font-style: italic;
     }
 
     .books-section {
@@ -42,16 +47,17 @@
     }
 
     .book-card {
-      background-color: #1c1c1c;
+      background-color: #3a2b20; /* Deep brown card */
       border-radius: 12px;
       overflow: hidden;
       width: 300px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
-      transition: transform 0.3s ease;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.6);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     .book-card:hover {
-      transform: scale(1.05);
+      transform: scale(1.03);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.7);
     }
 
     .book-card img {
@@ -70,17 +76,24 @@
       font-family: 'Playfair Display', serif;
       font-size: 1.4rem;
       margin: 0.5rem 0;
-      color: #e53935;
+      color: #f8c28c;
+      letter-spacing: 1px;
     }
 
     .book-card .book-info a {
       text-decoration: none;
-      color: #f3f3f3;
-      background-color: #e53935;
+      color: #2b1f16;
+      background-color: #f8c28c;
       padding: 0.5rem 1rem;
       border-radius: 6px;
       display: inline-block;
       margin-top: 0.5rem;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .book-card .book-info a:hover {
+      background-color: #d4af7f;
     }
   </style>
 </head>
