@@ -5,39 +5,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>RR Soul Scribbles</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap" rel="stylesheet">
+  
   <style>
     body {
       margin: 0;
-      background-color: #2b1f16; /* Deep library wood tone */
+      background-color: #1e1510;
       color: #f0e6d6;
       font-family: 'Roboto', sans-serif;
-      line-height: 1.6;
-      background-image: url('https://www.transparenttextures.com/patterns/wood-pattern.png'); /* optional texture */
+      background-image: url('https://i.imgur.com/1Aq1xsb.jpg'); /* smooth dark wood grain */
       background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
     }
-
+  
     header {
       text-align: center;
       padding: 4rem 2rem 2rem;
-      background-color: rgba(43, 31, 22, 0.95); /* translucent dark wood */
-      border-bottom: 2px solid #a9744f;
+      background: rgba(30, 21, 16, 0.95); /* Soft overlay */
+      border-bottom: 2px solid #b58e6f;
     }
-
+  
     header h1 {
       font-family: 'Playfair Display', serif;
       font-size: 2.8rem;
+      color: #f4d6a0;
       margin: 0;
-      color: #d4af7f; /* Gold-like title */
-      text-shadow: 1px 1px 3px #000;
+      text-shadow: 0 2px 4px #000;
     }
-
+  
     header p {
-      font-size: 1.1rem;
-      margin-top: 0.8rem;
-      color: #e0d2c0;
+      font-size: 1.2rem;
       font-style: italic;
+      color: #e0cbb1;
+      margin-top: 0.5rem;
     }
-
+  
     .books-section {
       display: flex;
       flex-wrap: wrap;
@@ -45,55 +47,52 @@
       gap: 2rem;
       padding: 2rem;
     }
-
+  
     .book-card {
-      background-color: #3a2b20; /* Deep brown card */
-      border-radius: 12px;
+      background-color: rgba(50, 35, 25, 0.9); /* Elegant deep brown glass feel */
+      border-radius: 14px;
       overflow: hidden;
       width: 300px;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.6);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.8);
+      transition: transform 0.3s ease;
     }
-
+  
     .book-card:hover {
-      transform: scale(1.03);
-      box-shadow: 0 6px 20px rgba(0,0,0,0.7);
+      transform: scale(1.05);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.9);
     }
-
+  
     .book-card img {
       width: 100%;
       height: auto;
       object-fit: contain;
       display: block;
     }
-
-    .book-card .book-info {
+  
+    .book-info {
       padding: 1rem;
       text-align: center;
     }
-
-    .book-card .book-info h2 {
+  
+    .book-info h2 {
       font-family: 'Playfair Display', serif;
       font-size: 1.4rem;
-      margin: 0.5rem 0;
       color: #f8c28c;
-      letter-spacing: 1px;
+      margin-bottom: 0.6rem;
     }
-
-    .book-card .book-info a {
+  
+    .book-info a {
       text-decoration: none;
       color: #2b1f16;
-      background-color: #f8c28c;
+      background-color: #f4d6a0;
       padding: 0.5rem 1rem;
       border-radius: 6px;
-      display: inline-block;
-      margin-top: 0.5rem;
       font-weight: bold;
       transition: background-color 0.3s ease;
     }
-
-    .book-card .book-info a:hover {
-      background-color: #d4af7f;
+  
+    .book-info a:hover {
+      background-color: #dcb27f;
     }
   </style>
 </head>
