@@ -9,74 +9,90 @@
   <style>
     body {
       margin: 0;
-      font-family: 'Libre Baskerville', serif;
-      background-color: #1f150e;
-      background-image: url('assets/library-vault-bg.png'); /* Replace with your background image */
+      background-color: #1e1510;
+      color: #f0e6d6;
+      font-family: 'Roboto', sans-serif;
+      background-image: url('https://i.imgur.com/1Aq1xsb.jpg'); /* smooth dark wood grain */
       background-size: cover;
       background-attachment: fixed;
-      background-repeat: no-repeat;
-      background-position: center center;
-      color: #f5e8c7;
+      background-position: center;
     }
-
+  
     header {
-      padding: 2rem 1rem;
       text-align: center;
+      padding: 4rem 2rem 2rem;
+      background: rgba(30, 21, 16, 0.95); /* Soft overlay */
+      border-bottom: 2px solid #b58e6f;
     }
-
+  
     header h1 {
-      font-size: 3rem;
+      font-family: 'Playfair Display', serif;
+      font-size: 2.8rem;
+      color: #f4d6a0;
       margin: 0;
-      color: #f5e8c7;
+      text-shadow: 0 2px 4px #000;
     }
-
+  
     header p {
+      font-size: 1.2rem;
       font-style: italic;
-      color: #d3b081;
+      color: #e0cbb1;
       margin-top: 0.5rem;
     }
-
+  
+    .books-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      padding: 2rem;
+    }
+  
     .book-card {
-      background-color: rgba(44, 30, 22, 0.95);
-      border-radius: 16px;
-      border: 2px solid #d3b081;
+      background-color: rgba(50, 35, 25, 0.9); /* Elegant deep brown glass feel */
+      border-radius: 14px;
+      overflow: hidden;
+      width: 300px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.8);
+      transition: transform 0.3s ease;
+    }
+  
+    .book-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.9);
+    }
+  
+    .book-card img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      display: block;
+    }
+  
+    .book-info {
       padding: 1rem;
-      max-width: 320px;
-      margin: 2rem auto;
-      box-shadow: 0 8px 16px rgba(0,0,0,0.8);
       text-align: center;
     }
-
-    .book-card img {
-      max-width: 100%;
-      border-radius: 12px;
-    }
-
-    .book-title {
+  
+    .book-info h2 {
+      font-family: 'Playfair Display', serif;
       font-size: 1.4rem;
-      margin: 1rem 0 0.5rem;
-      color: #f5e8c7;
+      color: #f8c28c;
+      margin-bottom: 0.6rem;
     }
-
-    .book-author {
-      font-size: 1rem;
-      color: #c9a871;
-    }
-
-    .read-button {
-      background-color: #f5e8c7;
-      color: #1f150e;
-      border: none;
-      padding: 0.6rem 1.2rem;
+  
+    .book-info a {
+      text-decoration: none;
+      color: #2b1f16;
+      background-color: #f4d6a0;
+      padding: 0.5rem 1rem;
       border-radius: 6px;
-      margin-top: 1rem;
-      cursor: pointer;
       font-weight: bold;
       transition: background-color 0.3s ease;
     }
-
-    .read-button:hover {
-      background-color: #e2cfab;
+  
+    .book-info a:hover {
+      background-color: #dcb27f;
     }
   </style>
 </head>
